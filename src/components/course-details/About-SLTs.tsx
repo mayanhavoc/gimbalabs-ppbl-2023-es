@@ -4,19 +4,19 @@ import React from "react";
 const AboutSLTs = () => {
   return (
     <Container maxWidth="80%" marginLeft="1em" marginTop="2em">
-      <Text>Module 100</Text>
-      <Heading size="2xl" color="theme.blue">Introductions and Getting Started</Heading>
-      <Text fontSize="xl" marginTop="1em">Welcome again to Plutus Project-Based Learning, or PPBL. Here is how this course works.</Text>
+      <Text>Módulo 100</Text>
+      <Heading size="2xl" color="theme.blue">Introducción y primeros pasos</Heading>
+      <Text fontSize="xl" marginTop="1em">Bienvenido de nuevo al aprendizaje basado en problemas de Plutus, (o PPBL por sus siglas en inglés). Este curso funciona de la siguiente manera.</Text>
 
         <OrderedList margin="1em" marginLeft="3em">
-          <ListItem  fontSize="xl">Each module starts with a list of Student Learning Targets (SLTs)</ListItem>
-          <ListItem  fontSize="xl">The lessons in each module are designed to help you master each learning target.</ListItem>
-          <ListItem  fontSize="xl">You will complete projects to demonstrate mastery of the learning targets.</ListItem>
-          <ListItem  fontSize="xl">You can see your mastery status for each SLT in the top right corner of this page.</ListItem>
+          <ListItem  fontSize="xl">Cada módulo empieza con una lista de Objetivos de Aprendizaje para el Estudiante (SLTs por sus siglas en inglés)</ListItem>
+          <ListItem  fontSize="xl">Cada lección en cada módulo está diseñada para ayudarte a dominar cada objetivo de aprendizaje.</ListItem>
+          <ListItem  fontSize="xl">Deberás completar proyectos para demostrar dominio de cada objetivo de aprendizaje.</ListItem>
+          <ListItem  fontSize="xl">Puedes ver el status de cada uno de tus objetivos de aprendizaje en la esquina superior derecha de esta página.</ListItem>
         </OrderedList>
 
-      <Heading size="2xl" color="theme.blue" marginTop="1em">What is a Student Learning Target?</Heading>
-      <Text fontSize="xl" marginTop="1em">A student learning target describes what you will know and be able to do at the end of of Lesson or Module. In other words, each SLT should help you understand why each lesson is here.</Text>
+      <Heading size="2xl" color="theme.blue" marginTop="1em">¿Qué es un objetivo de aprendizaje?</Heading>
+      <Text fontSize="xl" marginTop="1em">Un objetivo de aprendizaje describe que sabrás y podrás hacer al finalizar cada lección o módulo. En otras palabras, cada objetivo de aprendizaje existe para ayudarte a entender el "Por que" de cada lección.</Text>
     </Container>
   );
 };

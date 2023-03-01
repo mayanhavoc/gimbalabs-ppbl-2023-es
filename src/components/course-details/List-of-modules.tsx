@@ -4,33 +4,33 @@ import React from "react";
 
 const ListOfModules = () => {
     const items = [
-        { '100': 'Introductions and Getting Started' },
-        { '101': 'Write Your First Smart Contract' },
-        { '102': 'Build Your First Transactions' },
-        { '103': 'What You Will Learn in This Course' },
-        { '201': 'Build a Front End Dapp Template' },
-        { '202': 'Three Ways to Mint a Token' },
-        { '203': 'Three Ways to Mint an NFT' },
-        { '204': 'Writing and Using Plutus Validators' },
-        { '301': 'PPBL Faucet Project' },
-        { '302': 'On-Chain Essentials: Plutus' },
-        { '303': 'Off-Chain Essentials: Transactions, User Interfaces, and Queries' },
-        { '304': 'Intro to Testing and Optimization' },
-        { '401': 'Introducing Gimbal Project Treasury and Escrow' }
+        { '100': 'Introducción y primeros pasos' },
+        { '101': 'Escribe tu primer Smart Contract' },
+        { '102': 'Construye tus primeras transacciones' },
+        { '103': 'Que vas a aprender en este curso' },
+        { '201': 'Construye una plantilla para tu dApp' },
+        { '202': 'Tres maneras de acuñar un token' },
+        { '203': 'Tres maneras de acuñar un NFT' },
+        { '204': 'Escribir y utilizar validadores Plutus' },
+        { '301': 'Proyecto: El grifo de PPBL' },
+        { '302': 'Fundamentos básicos de On-chain' },
+        { '303': 'Fundamentos básicos de Off-chain: Transacciones, Interfaz de usuario, y Búsquedas' },
+        { '304': 'Introducción al testing y optimización' },
+        { '401': 'Introducción al proyecto de tesorería y depósito en garantía de Gimbalabs' }
     ];
     
     return (
         <Container maxWidth="max" marginLeft="0">
-                <Heading size="2xl" color="theme.blue" marginTop="1em">Plutus PBL is organized into Modules</Heading>
+                <Heading size="2xl" color="theme.blue" marginTop="1em">El Plutus PBL está organizado por módulos</Heading>
                 <Text fontSize="xl" marginTop="1em">
-                    This is the first module in the course. It is called "Introductions and Getting Started".
+                    Este es el primer módulo del curso, titulado "Introducción y primeros pasos".
                 </Text>
             
     
             <Divider marginTop="1em"/>
     
 
-            <Heading size="2xl" color="theme.blue" marginTop="1em">Here is a list of all Modules in this course:</Heading>
+            <Heading size="2xl" color="theme.blue" marginTop="1em">Esta es una lista de todos los módulos de este curso:</Heading>
 
             <List spacing={3} marginTop="1em">
                 {items.map((item, index) => {

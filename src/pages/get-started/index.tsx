@@ -8,19 +8,19 @@ import Head from "next/head";
 
 const items = [
   {
-    name: "PBL Framework",
+    name: "Estructura PBL",
     content: <PBLFramework />,
   },
   {
-    name: "List of Modules",
+    name: "Lista de Módulos",
     content: <ListOfModules />,
   },
   {
-    name: "Governance",
+    name: "Governanza",
     content: <Governance />,
   },
   {
-    name: "About SLTs",
+    name: "Acerca de los SLTs",
     content: <AboutSLTs />,
   },
 ];
@@ -29,7 +29,7 @@ const GetStarted = () => {
   return (
     <>
     <Head>
-      <title>Get Started</title>
+      <title>Empieza aquí</title>
     </Head>
     <div>
       <Sidebar items={items} />

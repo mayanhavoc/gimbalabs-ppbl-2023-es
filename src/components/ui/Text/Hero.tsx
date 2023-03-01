@@ -29,13 +29,13 @@ export default function CallToActionWithAnnotation() {
                 fontWeight={600}
                 fontSize={{ base: '2xl', sm: '4xl', md: '6xl' }}
                 lineHeight={'110%'}>
-                Gimbalabs presents: <br />
+                Gimbalabs presenta: <br />
                 <Text as={'span'} color={'theme.green'}>
                   2023 Plutus PBL program
                 </Text>
               </Heading>
               <Text>
-                The purpose of this course is help you learn Cardano development by doing it. <br/> This program consists of four stages: <br />Onboarding, Building Background Knowledge (BBK) and Specializing, which are provided in this Canvas Course. <br/> The fourth stage is Contributing, which is outlined in this course.
+                El propósito de este programa es ayudarte a aprender a desarrollar en Cardano resolviendo problemas. <br/> El programa consta de cuatro etapas: <br />Inducción, Desarrollo de Conocimientos Básicos y Especialización, todos ellos contenidos dentro de este LMS. <br/> La cuarta etapa es Contribución, la cual se describe en este curso.
               </Text>
               <Stack
                 direction={'column'}
@@ -51,7 +51,7 @@ export default function CallToActionWithAnnotation() {
                   _hover={{
                     bg: 'theme.green',
                   }}>
-                  <Link href="/get-started">Get Started</Link>
+                  <Link href="/get-started">Empieza aquí</Link>
                 </Button>
                 <Box>
                   <Icon

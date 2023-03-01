@@ -91,7 +91,7 @@ import {
               fontWeight={400}
               variant={'link'}
               href={'#'}>
-              Sign In
+              Iniciar sesión
             </Button>
             <Button
               as={'a'}
@@ -102,7 +102,7 @@ import {
               _hover={{
                 bg: 'theme.blue',
               }}>
-              Sign Up
+              Registrarse
             </Button>
             <CardanoWallet />
             <Button onClick={toggleColorMode}>
@@ -382,15 +382,15 @@ import { color } from "framer-motion";
 
   const NAV_ITEMS: Array<NavItem> = [
     {
-      label: 'Get Started',
+      label: 'Inicio',
       href: "/get-started",
     },
     {
-      label: 'Modules',
+      label: 'Módulos',
       childrenHasChildren: modulesChildren.childrenHasChildren,
     },
     {
-      label: 'Mastery',
+      label: 'Maestría',
       children: masteryChildren.children,
     },
     {
