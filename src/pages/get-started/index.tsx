@@ -6,17 +6,34 @@ import React from "react";
 import Sidebar from "@/src/components/ui/Text/Sidebar";
 import Head from "next/head";
 
-import { items } from "@/src/data/get-started";
+const items = [
+  {
+    name: "Estructura PBL",
+    content: <PBLFramework />,
+  },
+  {
+    name: "Lista de Módulos",
+    content: <ListOfModules />,
+  },
+  {
+    name: "Governanza",
+    content: <Governance />,
+  },
+  {
+    name: "Acerca de los SLTs",
+    content: <AboutSLTs />,
+  },
+];
 
 const GetStarted = () => {
   return (
     <>
-      <Head>
-        <title>Get Started</title>
-      </Head>
-      <div>
-        <Sidebar items={items} modulePath="/get-started" selected={0} />
-      </div>
+    <Head>
+      <title>Empieza aquí</title>
+    </Head>
+    <div>
+      <Sidebar items={items} />
+    </div>
     </>
   );
 };

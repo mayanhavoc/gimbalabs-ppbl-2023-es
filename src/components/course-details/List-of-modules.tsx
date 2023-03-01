@@ -4,36 +4,53 @@ import React from "react";
 import ModuleListWithSLTs from "../lms/Course/ModuleListWithSLTs";
 
 const ListOfModules = () => {
-  const textColorBlue = useColorModeValue("theme.darkBlue", "theme.blue")
-  return (
-    <Container maxWidth={["100%", "80%"]} marginLeft={["0em", "1em"]} marginTop="2em" fontSize="xl">
-      <Heading size="2xl" color={textColorBlue}>
-        Plutus PBL Course Outline
-      </Heading>
-      <Text fontSize="xl" pb="5">
-        Course modules are numbered. The Student Learning Targets (SLTs) in each Module are also numbered. The purpose of
-        this numbering system is to give all of us a quick way to reference what you are learning.
-      </Text>
-      <Text fontSize="xl" pb="5">
-        When you get stuck, you can start by saying, &rdquo;I need help with SLT 102.3&rdquo;, which is a quick indication that you
-        are &rdquo;learning to build transactions using cardano-cli&rdquo;. For an overview of what you will learn in PPBL 2023, take
-        a look at the SLTs below.
-      </Text>
-      <Text fontSize="lg" fontWeight="bold" color="theme.yellow" pb="5">
-        Click on a Module to view Student Learning Targets.
-      </Text>
-      <ModuleListWithSLTs />
-      <Heading size="xl" color={textColorBlue} my="0.8em">
-        Next:
-      </Heading>
-      <Text fontSize="xl" my="5">
-        How to get help with Plutus Project-Based Learning
-      </Text>
-      <Link href="/get-started/getting-help">
-        <Button>How to get help</Button>
-      </Link>
-    </Container>
-  );
+    const items = [
+        { '100': 'Introducción y primeros pasos' },
+        { '101': 'Escribe tu primer Smart Contract' },
+        { '102': 'Construye tus primeras transacciones' },
+        { '103': 'Que vas a aprender en este curso' },
+        { '201': 'Construye una plantilla para tu dApp' },
+        { '202': 'Tres maneras de acuñar un token' },
+        { '203': 'Tres maneras de acuñar un NFT' },
+        { '204': 'Escribir y utilizar validadores Plutus' },
+        { '301': 'Proyecto: El grifo de PPBL' },
+        { '302': 'Fundamentos básicos de On-chain' },
+        { '303': 'Fundamentos básicos de Off-chain: Transacciones, Interfaz de usuario, y Búsquedas' },
+        { '304': 'Introducción al testing y optimización' },
+        { '401': 'Introducción al proyecto de tesorería y depósito en garantía de Gimbalabs' }
+    ];
+    
+    return (
+        <Container maxWidth="max" marginLeft="0">
+                <Heading size="2xl" color="theme.blue" marginTop="1em">El Plutus PBL está organizado por módulos</Heading>
+                <Text fontSize="xl" marginTop="1em">
+                    Este es el primer módulo del curso, titulado "Introducción y primeros pasos".
+                </Text>
+            
+    
+            <Divider marginTop="1em"/>
+    
+
+            <Heading size="2xl" color="theme.blue" marginTop="1em">Esta es una lista de todos los módulos de este curso:</Heading>
+
+            <List spacing={3} marginTop="1em">
+                {items.map((item, index) => {
+                    const [moduleNumber, moduleName] = [Object.keys(item)[0], Object.values(item)[0]];
+                    return (
+                        <ListItem key={moduleNumber}>
+                            <ListIcon as={CheckCircleIcon} color="theme.green" />
+                            <Text fontWeight="bold" style={{ display: 'inline-flex' }}>
+                                <Text color="theme.blue" style={{ marginRight: 4 }}>{moduleNumber}</Text>
+                                {moduleName}
+                            </Text>
+                        </ListItem>
+                    );
+                })}
+            </List>
+        </Container>
+    );
+    
+    
 };
 
 export default ListOfModules;

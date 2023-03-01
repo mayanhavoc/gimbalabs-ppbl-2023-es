@@ -17,53 +17,20 @@ import React from "react";
 const AboutSLTs = () => {
   const textColorBlue = useColorModeValue("theme.darkBlue", "theme.blue");
   return (
-    <Container maxWidth={["95%", "80%"]} marginLeft={["0em", "1em"]} marginTop="2em" fontSize="xl">
-      <Heading size={["lg", "2xl"]} color={textColorBlue}>
-        About Student Learning Targets (SLTs)
-      </Heading>
-      <Heading size={["md", "lg"]} color="theme.green">
-        Here is how this course works:
-      </Heading>
-      <OrderedList marginLeft="3em">
-        <ListItem fontSize="xl" py="2">
-          PPBL 2023 consists of 14 course Modules
-        </ListItem>
-        <ListItem fontSize="xl" py="2">
-          Each Module starts with a list of Student Learning Targets (SLTs)
-        </ListItem>
-        <ListItem fontSize="xl" py="2">
-          The lessons in each module are designed to help you master each Student Learning Target.
-        </ListItem>
-        <ListItem fontSize="xl" py="2">
-          You will complete projects to learn through experience how Cardano works.
-        </ListItem>
-        <ListItem fontSize="xl" py="2">
-          Along the way, you will demonstrate mastery of the SLTs.
-        </ListItem>
-        <ListItem fontSize="xl" py="2">
-          Together, we will explore ways to use Cardano and Plutus to share a record of what you have learned.
-        </ListItem>
-      </OrderedList>
-      <Divider py="5" />
-      <Heading size="xl" color={textColorBlue}>
-        What is a Student Learning Target?
-      </Heading>
-      <Text fontSize="xl" mb="5">
-        A student learning target describes what you will know or be able to do at the end of each Module.
-      </Text>
-      <Text fontSize="xl" my="5">
-        SLTs should help you understand why we created each lesson.
-      </Text>
-      <Divider py="5" />
-      <Heading size="xl" color={textColorBlue}>
-        Next:
-      </Heading>
-      <Text fontSize="xl" mb="5">
-        Take a look at the list of Course Modules and Student Learning Targets in PPBL 2023.
-      </Text>
-      <Link href="/get-started/modules">
-        <Button>Show me the Modules and SLTs</Button>
-      </Link>
+    <Container maxWidth="80%" marginLeft="1em" marginTop="2em">
+      <Text>Módulo 100</Text>
+      <Heading size="2xl" color="theme.blue">Introducción y primeros pasos</Heading>
+      <Text fontSize="xl" marginTop="1em">Bienvenido de nuevo al aprendizaje basado en problemas de Plutus, (o PPBL por sus siglas en inglés). Este curso funciona de la siguiente manera.</Text>
+
+        <OrderedList margin="1em" marginLeft="3em">
+          <ListItem  fontSize="xl">Cada módulo empieza con una lista de Objetivos de Aprendizaje para el Estudiante (SLTs por sus siglas en inglés)</ListItem>
+          <ListItem  fontSize="xl">Cada lección en cada módulo está diseñada para ayudarte a dominar cada objetivo de aprendizaje.</ListItem>
+          <ListItem  fontSize="xl">Deberás completar proyectos para demostrar dominio de cada objetivo de aprendizaje.</ListItem>
+          <ListItem  fontSize="xl">Puedes ver el status de cada uno de tus objetivos de aprendizaje en la esquina superior derecha de esta página.</ListItem>
+        </OrderedList>
+
+      <Heading size="2xl" color="theme.blue" marginTop="1em">¿Qué es un objetivo de aprendizaje?</Heading>
+      <Text fontSize="xl" marginTop="1em">Un objetivo de aprendizaje describe que sabrás y podrás hacer al finalizar cada lección o módulo. En otras palabras, cada objetivo de aprendizaje existe para ayudarte a entender el "Por que" de cada lección.</Text>
     </Container>
   );
 };

@@ -5,32 +5,14 @@ import React from "react";
 const Governance = () => {
   const textColorBlue = useColorModeValue("theme.darkBlue", "theme.blue");
   return (
-    <Container maxWidth={["100%", "80%"]} marginLeft={["0em", "1em"]} marginTop="2em" fontSize="xl">
-      <Heading size="2xl" color={textColorBlue}>
-        Beyond Contribution is Governance
-      </Heading>
-      <Text marginTop="1em">
-        Our long-term intention is for you be <Text as="span" fontWeight="bold" color="theme.green">more than a contributor</Text> to projects.
-      </Text>
-      <Text marginTop="1em">
-        We want you to be a <Text as="span" fontWeight="bold" color="theme.green">decision maker</Text>, who helps answer the question:
-      </Text>
+    <Container maxWidth="max" marginLeft="1em" marginTop="2em">
+      <Heading size="2xl" color="theme.blue">Más allá de Contribución: Governanza</Heading>
+      <Text fontSize="xl" marginTop="1em">Nuestro intención es que seas más que un contribuidor.</Text>
+      <Text fontSize="xl" marginTop="1em">Queremos que tomes decisiones que ayuden a responder la pregunta:</Text>
 
-      <Heading size="2xl" color={textColorBlue} my="10">
-        &rdquo;What will we do next?&rdquo;
-      </Heading>
-      <Text fontWeight="bold" color="theme.green" my="1em">
-        We believe that community education is essential for building great governance systems.
-      </Text>
-      <Text my="1em">
-        We believe that we learn best by doing things.
-      </Text>
-      <Text my="1em">
-        So let&rsquo;s get started.
-      </Text>
-      <Link href="/modules/100">
-        <Button my="10">Get Started with Module 100</Button>
-      </Link>
+      <Heading size="2xl" color="theme.green" marginTop="1em">"¿Qué deberíamos hacer después?"</Heading>
+      <Text fontSize="xl" marginTop="1em">Creemos que cuando las personas son educadas, están mejor preparadas para tomar decisiones. Creemos que la mejor manera de educar es haciendo.</Text>
+      <Text fontSize="xl" marginTop="1em">Asi que empecemos.</Text>
     </Container>
   );
 };

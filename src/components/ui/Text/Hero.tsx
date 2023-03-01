@@ -5,59 +5,58 @@ import { useState } from "react";
 import { Box, Heading, Container, Text, Button, Stack, Icon, Link as CLink, createIcon } from "@chakra-ui/react";
 
 export default function CallToActionWithAnnotation() {
-  const { connected, wallet } = useWallet();
-  const [assets, setAssets] = useState<null | any>(null);
-  const [loading, setLoading] = useState<boolean>(false);
-  return (
-    <>
-      <Container maxW={["2xl", "4xl"]}>
-        <Stack as={Box} textAlign={"center"} spacing={{ base: 30, md: 14 }} py={{ base: 140, md: 100 }}>
-          <Heading fontWeight={600} fontSize={{ base: "2xl", sm: "2xl", md: "6xl" }} lineHeight={"150%"}>
-            Gimbalabs presents: <br />
-            <Text as={"span"} color={"theme.green"}>
-              Plutus Project-Based Learning
-              <br />
-              2023
-            </Text>
-          </Heading>
-          <Text fontSize={["lg", "xl"]}>
-            The goal of{" "}
-            <Text as="span" fontWeight="900" color="theme.green">
-              PPBL 2023
-            </Text>{" "}
-            is to support people like you <br /> to become{" "}
-            <Text as="span" fontWeight="900" color="theme.green">
-              Contributors
-            </Text>{" "}
-            to real{" "}
-            <Text as="span" fontWeight="900" color="theme.green">
-              Projects
-            </Text>
-            .
-          </Text>
-          <Text fontSize={["lg", "xl"]}>
-            The course is mastery-based <br />
-            and you can move through it at your speed.
-          </Text>
-          <Stack direction={"column"} spacing={3} align={"center"} alignSelf={"center"} position={"relative"}>
-            <Button
-              colorScheme={"green"}
-              bg={"theme.green"}
-              rounded={"full"}
-              px={6}
-              _hover={{
-                bg: "theme.green",
-              }}
-            >
-              <Link href="/get-started">Get Started</Link>
-            </Button>
-            <Box>
-              <Icon as={Arrow} w={71} position={"absolute"} right={-71} top={"10px"} />
-            </Box>
-          </Stack>
-        </Stack>
-      </Container>
-    </>
+    const { connected, wallet } = useWallet();
+    const [assets, setAssets] = useState<null | any>(null);
+    const [loading, setLoading] = useState<boolean>(false);
+    return (
+        <>
+          <Container maxW={'3xl'}>
+            <Stack
+              as={Box}
+              textAlign={'center'}
+              spacing={{ base: 30, md: 14 }}
+              py={{ base: 140, md: 100 }}>
+              <Heading
+                fontWeight={600}
+                fontSize={{ base: '2xl', sm: '4xl', md: '6xl' }}
+                lineHeight={'110%'}>
+                Gimbalabs presenta: <br />
+                <Text as={'span'} color={'theme.green'}>
+                  2023 Plutus PBL program
+                </Text>
+              </Heading>
+              <Text>
+                El propósito de este programa es ayudarte a aprender a desarrollar en Cardano resolviendo problemas. <br/> El programa consta de cuatro etapas: <br />Inducción, Desarrollo de Conocimientos Básicos y Especialización, todos ellos contenidos dentro de este LMS. <br/> La cuarta etapa es Contribución, la cual se describe en este curso.
+              </Text>
+              <Stack
+                direction={'column'}
+                spacing={3}
+                align={'center'}
+                alignSelf={'center'}
+                position={'relative'}>
+                <Button
+                  colorScheme={'green'}
+                  bg={'theme.green'}
+                  rounded={'full'}
+                  px={6}
+                  _hover={{
+                    bg: 'theme.green',
+                  }}>
+                  <Link href="/get-started">Empieza aquí</Link>
+                </Button>
+                <Box>
+                  <Icon
+                    as={Arrow}
+                    w={71}
+                    position={'absolute'}
+                    right={-71}
+                    top={'10px'}
+                  />
+                </Box>
+              </Stack>
+            </Stack>
+          </Container>
+        </>
   );
 }
 
