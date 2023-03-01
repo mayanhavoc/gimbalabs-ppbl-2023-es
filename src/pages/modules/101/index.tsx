@@ -13,27 +13,27 @@ import Lesson1013 from "./lesson-1013";
 
 const items = [
   {
-    name: "Check",
+    name: "Verifica",
     content: <> <Example /> <Module101 /> </>,
   },
   {
-    name: "Introduction",
+    name: "Introducción",
     content: <> <Status101 /> <Introduction /> </>,
   },
   {
-    name: "Lesson 1",
+    name: "Lección 1",
     content: <><Status101 /> <br/> <Lesson1011 /></>,
   },
   {
-    name: "Lesson 2",
+    name: "Lección 2",
     content: <><Status101 /> <br/> <Lesson1012 /></>,
   },
   {
-    name: "Lesson 3",
+    name: "Lección 3",
     content: <><Status101 /> <br/> <Lesson1013 /></>,
   },
   {
-    name: "Lesson 4",
+    name: "Lección 4",
     content: <><Status101 /> <br/> <Lesson1004 /></>,
   },
 ];
@@ -42,7 +42,7 @@ const HomeModule101 = () => {
   return (
     <>
       <Head>
-        <title>PPBL Module 101</title>
+        <title>PPBL Módulo 101</title>
       </Head>
       <div>
         <Sidebar items={items} />

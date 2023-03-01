@@ -3,14 +3,14 @@ import React from "react";
 
 const SLTs101 = () => {
   const items = [
-    { id: "101.1", SLT: "I can compile a plutus validator to Untyped Plutus Core (UPLC)." },
-    { id: "101.2", SLT: "I understand the role that UPLC plays in a decentralized application on Cardano." },
-    { id: "101.3", SLT: "I can use Demeter.run to compile a .plutus script." },
-    { id: "101.4", SLT: "I can set up a local Plutus development environment using nix shell, and use it to compile a .plutus script." },
+    { id: "101.1", SLT: "Puedo compilar un validador plutus a Untyped Plutus Core (UPLC)." },
+    { id: "101.2", SLT: "Entiendo el rol que juega el UPLC en una aplicación decentralizada en Cardano." },
+    { id: "101.3", SLT: "Puedo utilizar Demeter.run para compilar un script en formato .plutus" },
+    { id: "101.4", SLT: "Puedo configurar un ambiente local para desarrollar Plutus utilizando un nix shell, y utilizarlo para compilar un script en formato .plutus"},
   ];
 
   return (
-    <SLTsItems module="Module 101" items={items} />
+    <SLTsItems module="Módulo 101" items={items} />
   );
 };
 

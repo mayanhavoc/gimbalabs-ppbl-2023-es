@@ -22,7 +22,7 @@ export default function Lesson1002() {
 
   return (
     <Stack maxWidth="80%" marginLeft="1em" marginTop="2em" divider={<StackDivider borderColor="theme.three" />}>
-      <SLT id="100.2">I can get free tAda on the pre-production testnet</SLT>
+      <SLT id="100.2">Puedo obtener tAda gratis en la testnet de pre-producción</SLT>
       <Grid templateColumns="repeat(2, 1fr)" gap={6}>
         <AssignmentComponent>
           <OrderedList pb="5">
@@ -32,12 +32,12 @@ export default function Lesson1002() {
                 https://docs.cardano.org/cardano-testnet/tools/faucet
               </ChakraLink>
             </ListItem>
-            <ListItem>Make sure to select Preprod Testnet from the Environment menu.</ListItem>
-            <ListItem>Enter your preproduction address and submit the form.</ListItem>
-            <ListItem>Congrats, now you are rich with tAda!</ListItem>
+            <ListItem>Asegúrate de seleccionar "Preprod Testnet" en el menu.</ListItem>
+            <ListItem>Ingresa tu dirección de testnet y somete el formulario.</ListItem>
+            <ListItem>!Felicidades, eres rico en tAda!</ListItem>
           </OrderedList>
         </AssignmentComponent>
-        <SuccessComponent mastery={connected && mastery}>You have test ada in your wallet.</SuccessComponent>
+        <SuccessComponent mastery={connected && mastery}>Tienes tAda en tu billetera.</SuccessComponent>
       </Grid>
       <VideoComponent videoId="aaaaa">Video Guide:</VideoComponent>
     </Stack>

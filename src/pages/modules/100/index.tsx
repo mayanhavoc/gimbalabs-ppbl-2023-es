@@ -10,23 +10,23 @@ import Head from "next/head";
 
 const items = [
   {
-    name: "Student Learning Targets",
+    name: "Objetivos de Aprendizaje",
     content: <SLTs100 />,
   },
   {
-    name: "Lesson 1",
+    name: "Lección 1",
     content: <><Status100 /> <br/> <Lesson1001 /></>,
   },
   {
-    name: "Lesson 2",
+    name: "Lección 2",
     content: <><Status100 /> <br/> <Lesson1002 /></>,
   },
   {
-    name: "Lesson 3",
+    name: "Lección 3",
     content: <><Status100 /> <br/> <Lesson1003 /></>,
   },
   {
-    name: "Lesson 4",
+    name: "Lección 4",
     content: <><Status100 /> <br/> <Lesson1004 /></>,
   },
 ];
@@ -35,7 +35,7 @@ const Module100 = () => {
   return (
     <>
     <Head>
-      <title>PPBL Module 100</title>
+      <title>PPBL Módulo 100</title>
     </Head>
     <div>
       <Sidebar items={items} />

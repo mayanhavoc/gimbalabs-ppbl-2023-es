@@ -12,26 +12,26 @@ export default function Lesson1001() {
   
     return (
         <Stack maxWidth="80%" marginLeft="1em" marginTop="2em" divider={<StackDivider borderColor="theme.three" />}>
-        <SLT id="100.1">I can connect a Cardano wallet to the pre-production test network</SLT>
+        <SLT id="100.1">Puedo conectar una billetera Cardano al testnet de pre-producción</SLT>
         <Grid templateColumns="repeat(2, 1fr)" gap={10}>
           <AssignmentComponent>
-            <Text py="5">Try to connect a wallet. Make sure it is on a test network!</Text>
+            <Text py="5">Intenta conectar tu billetera. !Asegurate de estar conectado a una testnet!</Text>
             <Box mb="20">
               <CardanoWallet />
             </Box>
             {connected ? (
               <Box>
                 {network == 0 ? (
-                  "Success!"
+                  "Éxito!"
                 ) : (
-                  "Check network connection"
+                  "Revisa la conección de red"
                 )}
               </Box>
             ) : (
-              "Not connected"
+              "No hay conexión"
             )}
           </AssignmentComponent>
-          <SuccessComponent mastery={connected && network == 0}>You are connected to a Cardano Testnet</SuccessComponent>
+          <SuccessComponent mastery={connected && network == 0}>Estás conectado al Testnet de Cardano</SuccessComponent>
         </Grid>
   
         <VideoComponent videoId="aa">Placeholder Video (for demo)</VideoComponent>

@@ -3,14 +3,14 @@ import React from "react";
 
 const SLTs100 = () => {
   const items = [
-    { id: "100.1", SLT: "I can connect a Cardano wallet to the pre-production test network" },
-    { id: "100.2", SLT: "I can get free tAda on the pre-production testnet" },
-    { id: "100.3", SLT: "I know how to safely store my keys" },
-    { id: "100.4", SLT: "I can mint a Contributor Token for PPBL" },
+    { id: "100.1", SLT: "Puedo conectar una billetera Cardano a la testnet de pre-producción" },
+    { id: "100.2", SLT: "Puedo obtener tAda gratis en la testnet de pre-producción" },
+    { id: "100.3", SLT: "Se como guardar seguramente mis llaves" },
+    { id: "100.4", SLT: "Puedo acuñar un token de contribuidor del PPBL" },
   ];
 
   return (
-    <SLTsItems module="Module 100" items={items} />
+    <SLTsItems module="Módulo 100" items={items} />
   );
 };
 
