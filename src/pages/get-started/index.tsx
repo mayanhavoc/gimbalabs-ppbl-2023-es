@@ -12,16 +12,16 @@ const items = [
     content: <PBLFramework />,
   },
   {
-    name: "Lista de Módulos",
+    name: "About Student Learning Targets",
+    content: <AboutSLTs />,
+  },
+  {
+    name: "List of Course Modules",
     content: <ListOfModules />,
   },
   {
     name: "Governanza",
     content: <Governance />,
-  },
-  {
-    name: "Acerca de los SLTs",
-    content: <AboutSLTs />,
   },
 ];
 
