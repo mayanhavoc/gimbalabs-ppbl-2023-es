@@ -1,77 +1,52 @@
-import Head from 'next/head';
-import Link from 'next/link';
+import Head from "next/head";
+import Link from "next/link";
 import { CardanoWallet, useWallet } from "@meshsdk/react";
 import { useState } from "react";
-import {
-  Box,
-  Heading,
-  Container,
-  Text,
-  Button,
-  Stack,
-  Icon,
-  createIcon,
-} from '@chakra-ui/react';
+import { Box, Heading, Container, Text, Button, Stack, Icon, createIcon } from "@chakra-ui/react";
 
 export default function CallToActionWithAnnotation() {
-    const { connected, wallet } = useWallet();
-    const [assets, setAssets] = useState<null | any>(null);
-    const [loading, setLoading] = useState<boolean>(false);
-    return (
-        <>
-          <Container maxW={'3xl'}>
-            <Stack
-              as={Box}
-              textAlign={'center'}
-              spacing={{ base: 30, md: 14 }}
-              py={{ base: 140, md: 100 }}>
-              <Heading
-                fontWeight={600}
-                fontSize={{ base: '2xl', sm: '4xl', md: '6xl' }}
-                lineHeight={'110%'}>
-                Gimbalabs presenta: <br />
-                <Text as={'span'} color={'theme.green'}>
-                  2023 Plutus PBL program
-                </Text>
-              </Heading>
-              <Text>
-                El propósito de este programa es ayudarte a aprender a desarrollar en Cardano resolviendo problemas. <br/> El programa consta de cuatro etapas: <br />Inducción, Desarrollo de Conocimientos Básicos y Especialización, todos ellos contenidos dentro de este LMS. <br/> La cuarta etapa es Contribución, la cual se describe en este curso.
-              </Text>
-              <Stack
-                direction={'column'}
-                spacing={3}
-                align={'center'}
-                alignSelf={'center'}
-                position={'relative'}>
-                <Button
-                  colorScheme={'green'}
-                  bg={'theme.green'}
-                  rounded={'full'}
-                  px={6}
-                  _hover={{
-                    bg: 'theme.green',
-                  }}>
-                  <Link href="/get-started">Empieza aquí</Link>
-                </Button>
-                <Box>
-                  <Icon
-                    as={Arrow}
-                    w={71}
-                    position={'absolute'}
-                    right={-71}
-                    top={'10px'}
-                  />
-                </Box>
-              </Stack>
-            </Stack>
-          </Container>
-        </>
+  const { connected, wallet } = useWallet();
+  const [assets, setAssets] = useState<null | any>(null);
+  const [loading, setLoading] = useState<boolean>(false);
+  return (
+    <>
+      <Container maxW={"3xl"}>
+        <Stack as={Box} textAlign={"center"} spacing={{ base: 30, md: 14 }} py={{ base: 140, md: 100 }}>
+          <Heading fontWeight={600} fontSize={{ base: "2xl", sm: "4xl", md: "6xl" }} lineHeight={"110%"}>
+            Gimbalabs presents: <br />
+            <Text as={"span"} color={"theme.green"}>
+              2023 Plutus PBL program
+            </Text>
+          </Heading>
+          <Text fontSize="xl">The goal of PPBL 2023 is to support people like you <br /> to become Contributors to real Projects.</Text>
+          <Text fontSize="xl">
+            The course is mastery-based and you can move through it at your speed.
+          </Text>
+          <Stack direction={"column"} spacing={3} align={"center"} alignSelf={"center"} position={"relative"}>
+            <Button
+              colorScheme={"green"}
+              bg={"theme.green"}
+              rounded={"full"}
+              px={6}
+              _hover={{
+                bg: "theme.green",
+              }}
+            >
+              <Link href="/get-started">Get Started</Link>
+            </Button>
+            <Box>
+              <Icon as={Arrow} w={71} position={"absolute"} right={-71} top={"10px"} />
+            </Box>
+          </Stack>
+        </Stack>
+      </Container>
+    </>
   );
 }
 
 const Arrow = createIcon({
-  displayName: 'Arrow',
-  viewBox: '0 0 72 24',
+  displayName: "Arrow",
+  viewBox: "0 0 72 24",
   path: (
     <path
       fillRule="evenodd"
