@@ -5,23 +5,23 @@
         "children": [
           {
             "label": "100",
-            "subLabel": "Introducción y primeros pasos",
-            "href": "/modules/100"
+            "subLabel": "Introductions and Getting Started",
+            "href": "/modules/100/slts"
           },
           {
             "label": "101",
-            "subLabel": "Escribe tu primer smart contract",
-            "href": "/modules/101"
+            "subLabel": "Write your first smart contract",
+            "href": "/modules/101/slts"
           },
           {
             "label": "102",
-            "subLabel": "Construye tus primeras transacciones",
-            "href": "#"
+            "subLabel": "Build your first transactions",
+            "href": "/modules/102/slts"
           },
           {
             "label": "103",
-            "subLabel": "Que vas a aprender en este curso",
-            "href": "#"
+            "subLabel": "What you will learn in this course",
+            "href": "/modules/103/slts"
           }
         ]
       },
@@ -30,26 +30,25 @@
         "children": [
           {
             "label": "201",
-            "subLabel": "Construye una plantilla para tu dApp",
-            "href": "#"
+            "subLabel": "Build a front end dApp template",
+            "href": "/modules/201/slts"
           },
           {
             "label": "202",
-            "subLabel": "Tres maneras de acuñar un token",
-            "href": "#"
+            "subLabel": "Three ways to mint a token",
+            "href": "/modules/202/slts"
           },
           {
             "label": "203",
-            "subLabel": "Tres maneras de acuñar un NFT",
-            "href": "#"
+            "subLabel": "Three ways to mint an NFT",
+            "href": "/modules/203/slts"
           },
           {
             "label": "204",
-            "subLabel": "Escribir y utilizar validadores Plutus",
-            "href": "#"
+            "subLabel": "Writing & using plutus validators",
+            "href": "/modules/204/slts"
           }
         ]
       }
     ]
   }
-  
