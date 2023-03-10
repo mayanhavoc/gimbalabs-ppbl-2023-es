@@ -10,35 +10,15 @@ export default function CallToActionWithAnnotation() {
   const [loading, setLoading] = useState<boolean>(false);
   return (
     <>
-      <Container maxW={"3xl"}>
+      <Container maxW={"4xl"}>
         <Stack as={Box} textAlign={"center"} spacing={{ base: 30, md: 14 }} py={{ base: 140, md: 100 }}>
-          <Heading fontWeight={600} fontSize={{ base: "2xl", sm: "4xl", md: "4xl" }} lineHeight={"125%"}>
-            Gimbalabs presents:
-          </Heading>
-          <Heading fontWeight={600} fontSize={{ base: "2xl", sm: "4xl", md: "6xl" }} color="theme.green">
-            Plutus
-            <br />
-            Project-Based
-            <br />
-            Learning
-            <br />
-            2023
-          </Heading>
-          <Text fontSize="xl">
-            The goal of{" "}
-            <Text as="span" fontWeight="900" color="theme.green">
-              PPBL 2023
-            </Text>{" "}
-            is to support people like you <br /> to become{" "}
-            <Text as="span" fontWeight="900" color="theme.green">
-              Contributors
-            </Text>{" "}
-            to real{" "}
-            <Text as="span" fontWeight="900" color="theme.green">
-              Projects
+          <Heading fontWeight={600} fontSize={{ base: "4xl", sm: "2xl", md: "6xl" }} lineHeight={"150%"}>
+            Gimbalabs presents: <br />
+            <Text as={"span"} color={"theme.green"}>
+              Plutus Project-Based Learning<br/>2023
             </Text>
-            .
-          </Text>
+          </Heading>
+          <Text fontSize="xl">The goal of PPBL 2023 is to support people like you <br /> to become Contributors to real Projects.</Text>
           <Text fontSize="xl">
             The course is mastery-based <br />
             and you can move through it at your speed.
