@@ -81,7 +81,7 @@ const MDXLessonLayout: React.FC<Props> = ({ children }) => {
 };
 const MDXLessonLayout: React.FC<Props> = ({ children }) => {
   return (
-    <Box p="5" bg="black" className="mdx-content">
+    <Box p="5" bg="black" className="mdx-content" color="white">
       <MDXProvider components={components as Components}>{children}</MDXProvider>
     </Box>
   );
