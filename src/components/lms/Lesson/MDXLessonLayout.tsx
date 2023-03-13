@@ -19,6 +19,7 @@ type CodeProps = {
 type mdxComponents = {
   code: React.FC<CodeProps>;
   a: React.FC<React.AnchorHTMLAttributes<HTMLAnchorElement>>;
+  a: React.FC<React.AnchorHTMLAttributes<HTMLAnchorElement>>;
   // add other components here as needed
 };
 
@@ -63,13 +64,14 @@ const code: React.FC<CodeProps> = ({ node, inline, className, children, ...props
 };
 
 const CustomLink: React.FC<React.AnchorHTMLAttributes<HTMLAnchorElement>> = ({ href, children, ...rest }) => (
-  <a href={href} style={{ color: "#EBBA6F", fontWeight: "bold" }} {...rest}>
+  <a href={href} style={{ color: "#0044CC", fontWeight: "bold", textDecoration: "underline" }} {...rest}>
     {children}
   </a>
 );
 
 export const components: mdxComponents = {
   code,
+  a: CustomLink,
   a: CustomLink,
   // add other components here as needed
 };
