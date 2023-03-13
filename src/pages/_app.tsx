@@ -74,7 +74,7 @@ const theme = extendTheme({
         },
         p: {
           fontSize: "lg",
-          lineHeight: "1.4",
+          lineHeight: "2",
         },
         ul: {
           ml: "6",
