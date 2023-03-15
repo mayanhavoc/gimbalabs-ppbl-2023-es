@@ -1,6 +1,5 @@
 import SLTs301 from "@/src/components/course-modules/301/301-SLTs";
 import ModuleLessons from "@/src/components/lms/Lesson/Lesson";
-import ComingSoon from "@/src/components/lms/Lesson/ComingSoon";
 import slt from "@/src/data/slts-english.json"
 
 const Module301Lessons = () => {
