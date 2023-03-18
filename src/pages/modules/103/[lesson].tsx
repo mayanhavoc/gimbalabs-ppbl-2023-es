@@ -1,6 +1,6 @@
 import SLTs103 from "@/src/components/course-modules/103/103-SLTs";
-import ComingSoon from "@/src/components/lms/Lesson/ComingSoon";
 import ModuleLessons from "@/src/components/lms/Lesson/Lesson";
+import ComingSoon from "@/src/components/lms/Lesson/ComingSoon";
 import slt from "@/src/data/slts-english.json"
 
 

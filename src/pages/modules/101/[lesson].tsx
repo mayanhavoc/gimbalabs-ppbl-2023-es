@@ -17,7 +17,7 @@ const Module101Lessons = () => {
 
   const moduleSelected = slt.modules.find((m) => m.number === 101);
 
-  const status = <Status100 />
+  const status = <Status101 />
 
   // Sidebar items are generated from module.lessons i.e. from the JSON file
   // Here we simply set the contents by matching the slug and key
